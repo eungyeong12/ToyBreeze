@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/mainImage">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            app:srcCompat="@drawable/logout" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/mainImage"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="100dp"
+        android:background="@null"
+        android:backgroundTint="#000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toymain" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="409dp"
+            android:layout_height="307dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:orientation="horizontal"
+                app:layout_column="0"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/block"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/toy13" />
+
+                <ImageView
+                    android:id="@+id/doll"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/toy12" />
+
+                <ImageView
+                    android:id="@+id/block2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/toy11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:layout_marginTop="130dp"
+                android:orientation="horizontal"
+                app:layout_column="0"
+                app:layout_row="0">
+
+                <ImageButton
+                    android:id="@+id/blockImage1"
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/category_line"
+                    android:backgroundTintMode="add"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/toy2" />
+
+                <ImageButton
+                    android:id="@+id/dollImage1"
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/category_line"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/toy5" />
+            </LinearLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/toycar" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            app:srcCompat="@drawable/toykit" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

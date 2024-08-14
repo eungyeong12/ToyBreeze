@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp">
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="주문내역리스트"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <android.widget.Button
+            android:id="@+id/button6_s"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_background"
+            android:gravity="center"
+            android:text="선택"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="내용"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextContent_s"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edit_background_black"
+            android:gravity="top"
+            android:hint="문의할 내용을 입력하세요"
+            android:inputType="textMultiLine"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/textView7_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="사진"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="157dp"
+            android:layout_height="141dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_border2"
+            android:padding="15dp"
+            app:srcCompat="@drawable/camera" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2_s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.widget.Button
+            android:id="@+id/button7_s"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_background"
+            android:text="취소" />
+
+        <android.widget.Button
+            android:id="@+id/button8_s"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_background"
+            android:text="작성하기" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

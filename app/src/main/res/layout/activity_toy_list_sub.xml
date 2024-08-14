@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/middle"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_jo"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="정기 구독권 8월 선택 목록"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/toy_list_button_jo"
+        app:layout_constraintTop_toBottomOf="@+id/top">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/toy_list1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_background_black"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edit_background"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/toyimage2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="00장난감" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/textView44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="재고수량:"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView400"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center"
+                                android:text="7개"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textView44"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView41"
+                                    android:layout_width="80dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/category_background"
+                                    android:gravity="center"
+                                    android:scrollbars="none"
+                                    android:text="3-4세"
+                                    android:textColor="#454545" />
+
+                                <TextView
+                                    android:id="@+id/textView4021"
+                                    android:layout_width="90dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/category_background2"
+                                    android:gravity="center"
+                                    android:text="블록/조립"
+                                    android:textColor="#454545" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/toy_list_button_jo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_background3"
+        android:fontFamily="@font/nanum"
+        android:text="확인"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

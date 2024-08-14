@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="351dp"
+        app:srcCompat="@drawable/home" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/searchview_background"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@color/transparent"
+        android:queryHint="장난감을 검색하세요"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="220dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="160dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seller1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="135dp"
+        android:text="Total"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="$ 28,000,000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageButton
+        android:id="@+id/imageButton20"
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toy14" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton21"
+                android:layout_width="155dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/category_line"
+                android:foregroundGravity="center"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/toymain" />
+
+            <ImageButton
+                android:id="@+id/imageButton22"
+                android:layout_width="155dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/toy3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/button6"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/category_line"
+                android:text="Click"
+                android:textColorLink="#aadec0" />
+
+            <android.widget.Button
+                android:id="@+id/button7"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/category_line"
+                android:text="Click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton26"
+                android:layout_width="155dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/toy2"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/imageButton24"
+                android:layout_width="155dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/toy14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/button4"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/category_line"
+                android:text="Click" />
+
+            <android.widget.Button
+                android:id="@+id/button5"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/category_line"
+                android:text="Click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="155dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/category_line"
+                android:scaleType="centerCrop"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/toyimage1" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="155dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/category6" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

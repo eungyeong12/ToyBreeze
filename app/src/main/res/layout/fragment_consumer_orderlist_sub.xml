@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/consumer_orederlist">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/left_arrow" />
+
+                        <TextView
+                            android:id="@+id/order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:gravity="center"
+                            android:text="주문 내역"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/arrow"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item2date121"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingStart="10sp"
+                        android:paddingTop="10sp"
+                        android:text="2024.08.13"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/line4121"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingStart="10sp">
+
+                        <ImageView
+                            android:id="@+id/imageView8211"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toyimage2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingStart="10sp">
+
+                            <TextView
+                                android:id="@+id/company2311"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="토이토이" />
+
+                            <TextView
+                                android:id="@+id/textView2161"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="장난감 자동차"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date21312"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="2024.08.16-2024.09.16" />
+
+                            <TextView
+                                android:id="@+id/price21312"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="24,900원" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.widget.Button
+                        android:id="@+id/button71212"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/btn_background"
+                        android:text="배송 대기"
+                        android:textColorLink="#8F7777" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item2date112"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingStart="10sp"
+                        android:paddingTop="10sp"
+                        android:text="2024.08.05"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/line4112"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingStart="10sp">
+
+                        <ImageView
+                            android:id="@+id/imageView1821"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/dog" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingStart="10sp">
+
+                            <TextView
+                                android:id="@+id/compa1ny231"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="장난감 나라" />
+
+                            <TextView
+                                android:id="@+id/textView1261"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="귀여운 강아지 인형"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date21315"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="2024.08.08-2024.09.08" />
+
+                            <TextView
+                                android:id="@+id/price21315"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="19,900원" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.widget.Button
+                        android:id="@+id/button71217"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/btn_background"
+                        android:text="배송 대기"
+                        android:textColorLink="#8F7777" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line31"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item2date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingStart="10sp"
+                        android:paddingTop="10sp"
+                        android:text="2024.08.01"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingStart="10sp">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/doctor" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingStart="10sp">
+
+                            <TextView
+                                android:id="@+id/company3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="토이토이" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="의사놀이"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="2024.01.10-2024.02.09" />
+
+                            <TextView
+                                android:id="@+id/price3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="26,500원" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.widget.Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/btn_background"
+                        android:text="배송 완료"
+                        android:textColorLink="#8F7777" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line32"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item2date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingStart="10sp"
+                        android:paddingTop="10sp"
+                        android:text="2024.07.03"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/line41"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingStart="10sp">
+
+                        <ImageView
+                            android:id="@+id/imageView81"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/bear" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingStart="10sp">
+
+                            <TextView
+                                android:id="@+id/company31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="둥글둥글" />
+
+                            <TextView
+                                android:id="@+id/textView61"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="귀여운 곰인형"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="2024.01.21-2024.02.20" />
+
+                            <TextView
+                                android:id="@+id/price31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="7,500원" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.widget.Button
+                        android:id="@+id/button71"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/btn_background"
+                        android:text="배송 완료"
+                        android:textColorLink="#8F7777" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
