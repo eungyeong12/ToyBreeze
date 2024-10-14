@@ -74,7 +74,7 @@
 
 ### 스크린샷
 
-소비자
+- 소비자
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4fc9907a-4c2c-46ff-935d-e013834fe635" width="200"/>
@@ -87,7 +87,7 @@
   <img src="https://github.com/user-attachments/assets/3029d6ec-c250-4e66-aa61-b67ed5aefaeb" width="200"/>
 </p>
 
-판매자
+- 판매자
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5873cf4c-d3bb-43c5-b8be-fc8d9ad5a64e" width="200"/>
   <img src="https://github.com/user-attachments/assets/79b0b460-05de-44e2-a950-17a1d9dd82a8" width="200"/>
