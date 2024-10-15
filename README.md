@@ -13,7 +13,7 @@
       <td align="center"><a href="https://github.com/MinjiSeo16"><img src="https://avatars.githubusercontent.com/u/151079127?v=4" width="100px;" alt=""/><br /><sub><b>서민지 </b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/kyjlab"><img src="https://avatars.githubusercontent.com/u/172115050?v=4" width="100px;" alt=""/><br /><sub><b>김유정 </b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/JeongYuu"><img src="https://avatars.githubusercontent.com/u/86427017?v=4" width="100px;" alt=""/><br /><sub><b>정유진 </b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="https://github.com/kyjlab" width="100px;" alt=""/><br /><sub><b>우상은 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Woosangeun12"><img src="https://avatars.githubusercontent.com/u/139196954?v=4" width="100px;" alt=""/><br /><sub><b>우상은 </b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>
